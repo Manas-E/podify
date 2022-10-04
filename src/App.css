@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+
+
+body{
+  background-color: black;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reviewCard{
+
+  border-radius: 25px !important;
+  box-shadow: gray;
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.svg-icon{
+  width:24px;
+  height:24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.badge{
+  color:white !important;
+  padding: 25px !important;
+  font-size: medium !important;
+  cursor: pointer !important;
+}
+
+.badge:hover{
+  color:white !important;
+  padding: 25px !important;
+  font-size: medium !important;
+  cursor: pointer !important;
+  opacity:0.7;
+}
+
+.headline{
+   font-size: 40px !important;
+  font-weight: 600 !important;
+  font-family: sans-serif;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b) !important;
+  color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+
+}
+
+.custom-input  input {
+  border-radius: 10px;
+  border: 5px solid #43B0ED;
+  width:35em;
+  height:60px;
+  background-color:white;
+}
+
+.custom-input input:focus{
+  border-radius: 10px;
+  border: 5px solid #43B0ED;
+  height:60px;
+  background-color:black;
   color: white;
+  filter: drop-shadow(0 10px 8px #43B0ED) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
-.App-link {
-  color: #61dafb;
+.custom-btn {
+  height:60px !important;
+  border-radius: 10px !important;
+  background-color:#43B0ED !important;
+  font-size:20px !important;
+  font-weight:600 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-btn:hover {
+  background-color:black !important;
+  border: 5px solid #43B0ED !important;
+
 }
+
+
+.line-clamp {
+  display: -webkit-box !important; 
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;  
+  overflow: hidden !important;
+}
+
+

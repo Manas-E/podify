@@ -11,7 +11,7 @@ import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
 
 
-Amplify.configure(config)
+Amplify.configure(JSON.parse(process.env.REACT_APP_AWSCONFIG))
 Amplify.register(Predictions);
 Predictions.addPluggable(new AmazonAIPredictionsProvider());
 
