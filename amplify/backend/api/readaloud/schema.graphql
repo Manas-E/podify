@@ -1,0 +1,11 @@
+type Podcast @model @auth(rules: [{ allow: public }, { allow: owner }]) {
+  id: ID!
+  title: String!
+  description: String
+  blogUrl: AWSURL
+  imageUrl: AWSURL
+  time: AWSTime
+  date: String
+  user: String!
+  s3Url: String!
+}

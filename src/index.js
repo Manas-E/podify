@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
+import "@aws-amplify/ui-react/styles.css"
+import config from "./aws-exports.js"
+import  { AmplifyProvider } from "@aws-amplify/ui-react"
+import Predictions from '@aws-amplify/predictions';
+import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+import { Amplify, API, graphqlOperation } from 'aws-amplify';
+
+
+Amplify.configure(config)
+Amplify.register(Predictions);
+Predictions.addPluggable(new AmazonAIPredictionsProvider());
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <AmplifyProvider>
     <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  </AmplifyProvider>
+)

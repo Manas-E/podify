@@ -1,0 +1,14 @@
+{
+  "resourceName": "podify",
+  "policyUUID": "f59cf7c3",
+  "bucketName": "podify-bucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

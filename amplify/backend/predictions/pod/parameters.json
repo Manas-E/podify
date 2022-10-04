@@ -1,0 +1,14 @@
+{
+    "resourceName": "pod",
+    "convertPolicyName": "speechGeneratorPolicybd934491",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "convertType": "speechGenerator",
+    "language": "en-US",
+    "voice": "Kendra",
+    "access": "auth"
+}
